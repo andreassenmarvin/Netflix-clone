@@ -125,7 +125,7 @@ header .header-hero {
 .faq {
   padding: 50px 0;
   color: #fff;
-  border-bottom: 8px solid #222222;
+  border-bottom: 8px solid black;
 }
 
 .faq h1 {
@@ -143,6 +143,7 @@ header .header-hero {
   font-weight: 400;
   font-size: 21px;
 }
+
 
 .faq i {
   font-size: 1.6rem;
