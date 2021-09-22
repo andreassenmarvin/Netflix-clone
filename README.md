@@ -16,4 +16,4 @@ This is a replica of Netflix web page.
   Incase of any contributions,query or issues,you can reach me through the email below:
 machariamarvin625@gmail.com
 ### License
-This project is licensed under the<a href="https://github.com/andreassenmarvin/Netflix-clone/blob/master/LICENSE">MIT LICENSE</a>
+This project is licensed under the<a href="https://github.com/andreassenmarvin/Netflix-clone/blob/master/LICENSE"> MIT LICENSE</a>
