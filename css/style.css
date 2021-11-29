@@ -50,9 +50,10 @@ header::before {
   background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 1) 100%);
 }
 
-header .logo {
-  height: 100px;
+.logo {
+  height: 120px;
   z-index: 3;
+  margin-left: 1.5vw;
 }
 
 header h1 {
