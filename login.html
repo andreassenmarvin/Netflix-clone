@@ -13,14 +13,53 @@
 </head>
 
 <body class="login-body">
-    <div class="header-overlay"></div>
+    <div class="login-header-overlay"></div>
     <a href="index.html"><img class="logo" src="assets/img/logo.png" alt="logo"></a>
+
+    <section id="login-form-section">
+
+        <div class="loginContainer d-flex direction-column">
+            <h2 class="formtitle">
+                Sign In
+            </h2>
+            <form action="" id="loginForm" class="d-flex direction-column" method="post" name="loginForm">
+                <input type="text" name="email" id="email" class="email" placeholder="Email or phone number"
+                    onchange="validateEmail()" />
+                <p id="errorEmail">Please enter a valid email address or phone number.</p>
+
+                <input type="password" name="password" id="password" placeholder="Password" />
+                <p id="errorPassword">Your password must contain between 4 and 60 characters.</p>
+
+                <button type="submit" class="button submitButton" id="signInButton">
+                    Sign In
+                </button>
+
+                <div class="btn-bottom">
+                    <div class="rememberMe">
+                        <input type="checkbox" name="rememberMe" id="rememberMe" checked>
+                        <label for="rememberMe"><span class="remember-me-text">Remember me</span></label>
+                    </div>
+                    <a href="https://www.netflix.com/ke/LoginHelp" style="font-size: 14px; 
+                    color: #b3b3b3;">Need help?</a>
+                </div>
+                <p class="signUpText para">
+                    New to Netflix? <span class="signUp"><a href="index.html">Sign up Now.</a></span>
+                </p>
+                <p class="bottomMessage para">
+                    This page is protected by Google reCAPTCHA to ensure you're not a bot. <a href="#"
+                        style="color: #0071eb;">Learn more.</a>
+                </p>
+            </form>
+        </div>
+    </section>
+
 
 
 
     <script src="js/jquery.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="main.js"></script>
 </body>
 
 </html>
