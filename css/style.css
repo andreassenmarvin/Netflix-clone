@@ -51,9 +51,11 @@ header::before {
 }
 
 .logo {
+  position: relative;
   height: 120px;
   z-index: 3;
   margin-left: 1.5vw;
+  cursor: pointer;
 }
 
 header h1 {
@@ -201,6 +203,9 @@ footer .dropdown button {
   background-color: #000;
 }
 
+.login-body {
+  background: url("/assets/img/banner.jpg");
+}
 
 
 /* responsive */
