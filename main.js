@@ -25,3 +25,68 @@ $(function () {
        }
     })
 })
+
+var email = document.getElementById("email");
+var errEmail = document.getElementById("errorEmail");
+
+function validateEmail() {
+    if (email.value == "") {
+        errEmail.style.display = "block"
+        email.style.borderBottom = "1px solid #E87C03";
+    }
+
+    else {
+        errEmail.style.display = "none";
+        email.style.borderBottom = "none";
+    }
+}
+
+var password = document.getElementById("password");
+var errPassword = document.getElementById("errorPassword");
+
+function validatePassword() {
+    if (password.value.length < 4) {
+        errPassword.style.display = "block";
+        password.style.borderBottom = "1px solid #E87C03";
+    }
+
+    else {
+        errPassword.style.display = "none";
+        password.style.borderBottom = "none";
+    }
+}
+
+function validateForm(event) {
+    if (email.value == "" && password.value.length < 4) {
+        errEmail.style.display = "block";
+        email.style.borderBottom = "1px solid #E87C03";
+        errPassword.style.display = "block";
+        password.style.borderBottom = "1px solid #E87C03";
+
+        return false;
+    }
+
+
+    else if (email.value == "") {
+        errEmail.style.display = "block"
+        email.style.borderBottom = "1px solid #E87C03";
+
+        return false;
+    }
+
+    else if (password.value.length < 4) {
+        errPassword.style.display = "block";
+        password.style.borderBottom = "1px solid #E87C03";
+
+        return false;
+    }
+
+    else {
+        errPassword.style.display = "none";
+        password.style.borderBottom = "none";
+        errEmail.style.display = "none";
+        email.style.borderBottom = "none";
+        
+        return true;
+    }
+}
