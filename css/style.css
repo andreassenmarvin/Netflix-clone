@@ -449,7 +449,7 @@ footer .dropdown button {
 }
 
 .login-body {
-  background: url("assets/img/banner.jpg");
+  background: url("../assets/img/banner.jpg");
   background-repeat: no-repeat;
   color: white;
 }
