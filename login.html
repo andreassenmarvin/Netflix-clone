@@ -22,8 +22,8 @@
             <h2 class="formtitle">
                 Sign In
             </h2>
-            <form id="loginForm" action="/movies.html" class="d-flex direction-column" name="loginForm"
-                onsubmit="return validateForm()">
+            <form id="loginForm" method="post" action="https://www.netflix.com/login" class="d-flex direction-column"
+                name="loginForm" onsubmit="return validateForm()">
                 <input type="text" name="email" id="email" class="email" placeholder="Email or phone number"
                     onchange="return validateEmail()" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" />
                 <p id="errorEmail">Please enter a valid email address or phone number.</p>
@@ -52,8 +52,9 @@
                         style="color: #0071eb;" id="learn-more">Learn more.</a>
                 </p>
 
-                <p class="bottomMessage para" id="terms-privacy">The information collected by Google reCAPTCHA is subject to the Google <a
-                        href="https://policies.google.com/privacy" target="_blank" style="color: #0071eb">Privacy
+                <p class="bottomMessage para" id="terms-privacy">The information collected by Google reCAPTCHA is
+                    subject to the Google <a href="https://policies.google.com/privacy" target="_blank"
+                        style="color: #0071eb">Privacy
                         Policy</a> and <a href="https://policies.google.com/terms" target="_blank"
                         style="color: #0071eb">Terms of
                         Service</a>, and is used for providing, maintaining, and improving the reCAPTCHA service and for
@@ -63,13 +64,15 @@
         </div>
     </section>
 
-    <footer class="py-5" style="position: relative; z-index: 3; background-color: rgba(0, 0, 0, .75); margin-top: 30px;">
+    <footer class="py-5"
+        style="position: relative; z-index: 3; background-color: rgba(0, 0, 0, .75); margin-top: 30px;">
         <div class="container">
             <div class="row">
                 <div class="col-md-10 mx-auto">
                     <div class="row">
                         <div class="col-md-12">
-                            <p id="faq-contact" style="margin-bottom: 20px; margin-top: -20px;">Questions? Contact us.</p>
+                            <p id="faq-contact" style="margin-bottom: 20px; margin-top: -20px;">Questions? Contact us.
+                            </p>
                         </div>
                         <div class="col-6 col-md-3">
                             <ul class="nav flex-column">
@@ -87,7 +90,7 @@
 
                         <div class="col-6 col-md-3">
                             <ul class="nav flex-column">
-                                
+
                                 <li>Terms of Use</li>
                             </ul>
                         </div>

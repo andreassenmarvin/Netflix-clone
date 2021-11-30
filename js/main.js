@@ -21,7 +21,7 @@ $(function () {
         }
     })
 
-    $("#learn-more").click(function() {
+    $("#learn-more").click(function () {
         $("#terms-privacy").fadeIn();
         $("#learn-more").fadeOut();
     })
