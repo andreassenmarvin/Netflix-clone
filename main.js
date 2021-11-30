@@ -20,6 +20,11 @@ $(function () {
             $("#signup2-error").hide();
         }
     })
+
+    $("#learn-more").click(function() {
+        $("#terms-privacy").fadeIn();
+        $("#learn-more").fadeOut();
+    })
 })
 
 var email = document.getElementById("email");

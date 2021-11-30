@@ -561,6 +561,10 @@ button:focus {
   font-size: 13px;
 }
 
+#terms-privacy {
+  display: none;
+}
+
 
 /* responsive */
 /* tablet */
