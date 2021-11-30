@@ -32,15 +32,16 @@
                         <h2 class="text-center my-3">Watch anywhere. Cancel anytime.</h2>
                         <h3 class="text-center">Ready to watch? Enter your email to create or restart your membership.
                         </h3>
-                        <form>
+                        <form class="signup-form1">
                             <div class="input-group mb-3">
-                                <input type="text" class="form-control" placeholder="Email address"
-                                    aria-describedby="button-addon2">
+                                <input type="text" class="form-control" id="signup-input1" placeholder="Email address"
+                                    aria-describedby="button-addon2" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
                                 <div class="input-group-append w-sm-100 d-flex justify-content-center mt-3 mt-md-0">
-                                    <button class="btn btn-custom-danger px-5" type="button" id="button-addon2">Get
+                                    <button class="btn btn-custom-danger px-5 signupbtn1" type="submit" id="button-addon2">Get
                                         Started</button>
                                 </div>
                             </div>
+                            <p id="signup1-error">Email is required!</p>
                         </form>
                     </div>
                 </div>
@@ -69,11 +70,7 @@
     </section>
 
     <section class="story-container py-5 py-md-4">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 d-flex align-items-center order-sm-2">
-                    <div class="text-center text-md-left">
-                        <h1 class="mb-3">Download your shows to watch offline.</h1>
+        <div class="container"><p id="signup1-error">Email is required!</p>3">Download your shows to watch offline.</h1>
                         <h2 style="font-weight: 400;">Save your favorites easily and always have something to watch.
                         </h2>
                     </div>
@@ -101,7 +98,7 @@
             </div>
         </div>
     </section>
-
+    <p id="signup1-error">Email is required!</p>
     <section class="faq">
         <div class="container">
             <div class="row">
@@ -147,7 +144,7 @@
                                     costs, no contracts.
                                 </div>
                             </div>
-                        </div>
+                            <p id="signup1-error">Email is required!</p>         </div>
 
                         <!--  -->
                         <div class="card mb-2">
@@ -217,15 +214,16 @@
 
                     <h3 class="text-center" style="margin-top: 70px;">Ready to watch? Enter your email to create or
                         restart your membership.</h3>
-                    <form action="" class="mt-4">
+                    <form class="mt-4 signup-form2">
                         <div class="input-group mb-3">
-                            <input type="text" class="form-control" placeholder="Email address"
-                                aria-describedby="button-addon2">
+                            <input type="text" class="form-control" id="signup-input2" placeholder="Email address"
+                                aria-describedby="button-addon2"4 pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
                             <div class="input-group-append w-sm-100 d-flex justify-content-center mt-3 mt-md-0">
-                                <button class="btn btn-custom-danger px-5" type="button" id="button-addon2">Get
+                                <button class="btn btn-custom-danger px-5" type="submit" id="button-addon2">Get
                                     Started</button>
                             </div>
                         </div>
+                        <p id="signup2-error">Email is required!</p>
                     </form>
                 </div>
             </div>

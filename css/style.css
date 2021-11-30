@@ -334,6 +334,21 @@ header .header-hero {
   margin: 120px 0;
 }
 
+#signup1-error {
+  position: relative;
+  z-index: 3;
+  color: #E87C03;
+  display: none;
+}
+
+#signup2-error {
+  position: relative;
+  z-index: 3;
+  color: #E87C03;
+  display: none;
+}
+
+
 /* story container */
 .story-container {
   border-bottom: 8px solid #222222;
