@@ -1,5 +1,5 @@
 # NETFLIX CLONE
-This is a replica of Netflix web page.
+This is a replica of the Netflix web page.
 ## Description/Installation Requirements
 * Fork/Clone the repository
 ```
