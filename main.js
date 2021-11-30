@@ -1,28 +1,24 @@
 $(function () {
-    $(".signup-form1").submit(function(event) {
+    $(".signup-form1").submit(function (event) {
         event.preventDefault();
 
-       if ($("#signup-input1").val() == "") {
-           $("#signup1-error").show();
-       }
-
-       else {
-           window.location = "login.html";
-           $("#signup1-error").hide();
-       }
+        if ($("#signup-input1").val() == "") {
+            $("#signup1-error").show();
+        } else {
+            window.location = "login.html";
+            $("#signup1-error").hide();
+        }
     })
 
-    $(".signup-form2").submit(function(event) {
+    $(".signup-form2").submit(function (event) {
         event.preventDefault();
 
-       if ($("#signup-input2").val() == "") {
-           $("#signup2-error").show();
-       }
-
-       else {
-           window.location = "login.html";
-           $("#signup2-error").hide();
-       }
+        if ($("#signup-input2").val() == "") {
+            $("#signup2-error").show();
+        } else {
+            window.location = "login.html";
+            $("#signup2-error").hide();
+        }
     })
 })
 
@@ -33,9 +29,7 @@ function validateEmail() {
     if (email.value == "") {
         errEmail.style.display = "block"
         email.style.borderBottom = "1px solid #E87C03";
-    }
-
-    else {
+    } else {
         errEmail.style.display = "none";
         email.style.borderBottom = "none";
     }
@@ -48,9 +42,7 @@ function validatePassword() {
     if (password.value.length < 4) {
         errPassword.style.display = "block";
         password.style.borderBottom = "1px solid #E87C03";
-    }
-
-    else {
+    } else {
         errPassword.style.display = "none";
         password.style.borderBottom = "none";
     }
@@ -64,29 +56,22 @@ function validateForm(event) {
         password.style.borderBottom = "1px solid #E87C03";
 
         return false;
-    }
-
-
-    else if (email.value == "") {
+    } else if (email.value == "") {
         errEmail.style.display = "block"
         email.style.borderBottom = "1px solid #E87C03";
 
         return false;
-    }
-
-    else if (password.value.length < 4) {
+    } else if (password.value.length < 4) {
         errPassword.style.display = "block";
         password.style.borderBottom = "1px solid #E87C03";
 
         return false;
-    }
-
-    else {
+    } else {
         errPassword.style.display = "none";
         password.style.borderBottom = "none";
         errEmail.style.display = "none";
         email.style.borderBottom = "none";
-        
+
         return true;
     }
 }

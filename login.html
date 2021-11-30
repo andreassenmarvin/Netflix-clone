@@ -22,7 +22,7 @@
             <h2 class="formtitle">
                 Sign In
             </h2>
-            <form id="loginForm" class="d-flex direction-column" name="loginForm" onsubmit="return validateForm()" >
+            <form id="loginForm" method="post" action="movies.html" class="d-flex direction-column" name="loginForm" onsubmit="return validateForm()">
                 <input type="text" name="email" id="email" class="email" placeholder="Email or phone number"
                     onchange="return validateEmail()" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" />
                 <p id="errorEmail">Please enter a valid email address or phone number.</p>
